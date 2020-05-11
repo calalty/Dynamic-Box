@@ -2,31 +2,34 @@ const wrapper = document.getElementById('wrapper')
 const btn = document.getElementById('button')
 const clearbtn = document.getElementById('clearButton')
 
+// refreshes number of boxes
+
+btn.addEventListener ('click', () => {
+while (wrapper.hasChildNodes()) 
+wrapper.removeChild(wrapper.firstChild)
+})
+
 // adds boxes
 
-
-btn.onclick = () => { // .onclick means when the button is clicked
-
-    let numBoxes = number.value
-    let imageSearch = input.value
-
-for (i = 0; i < numBoxes; i++) {
-    const box = document.createElement('box')
-    box.className = 'box'
-
-    let generatedImage = document.createElement('img') 
-
-    let numGen = Math.ceil((Math.random() * 100) + 1); // randomises the image
-
-    generatedImage.src = `https://source.unsplash.com/random/500x500/?sig=${imageSearch}&${numGen}`
-    generatedImage.setAttribute("height", "425vw / 3.5")
-    generatedImage.setAttribute("width", "425vw / 3.5")
+form.onsubmit = (event) => { // .The onsubmit event is an event that occurs when you try to submit a form.
+    event.preventDefault() // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur. 
+    // For example, this can be useful when: Clicking on a "Submit" button, prevent it from submitting a form. 
+    // Clicking on a link, prevent the link from following the URL.
     
-    wrapper.appendChild(box)
-    box.appendChild(generatedImage)
+	let numBoxes = number.value
+	let imageSearch = input.value
+	for (let i = 0; i < numBoxes; i++) {
+		const box = document.createElement('box')
+		box.className = 'box'
+		let generatedImage = document.createElement('img')
+		let numGen = Math.ceil((Math.random() * 100) + 1) // randomises the image
+		generatedImage.src = `https://source.unsplash.com/random/500x500/?sig=${numGen}&${imageSearch}`
+		generatedImage.setAttribute("height", "425vw / 3.5")
+		generatedImage.setAttribute("width", "425vw / 3.5")
+		wrapper.appendChild(box)
+		box.appendChild(generatedImage)
+	}
 }
-}
-
 
 // clears all boxes
 
