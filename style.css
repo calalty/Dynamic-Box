@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
 html,
 body {
 	width: 100%;
@@ -40,4 +43,32 @@ input {
 	height: calc(100vw / 3.5);
 	margin: 10px;
 	background-color: #404040;
+}
+
+h1 {
+	font-family: 'Monoton', cursive;
+	font-weight: lighter;
+	letter-spacing: 0.1em;
+	word-spacing: 0.25em;
+	color:  #C0C0C0;
+}
+
+#clearButton {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	border-radius: 50%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	background-color: #C0C0C0;
+	color: white;
+	border-color: #C0C0C0;
+}
+
+#input, #number {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	background-color: #C0C0C0;
+	color: white;
+	border-color: #C0C0C0;
+
 }

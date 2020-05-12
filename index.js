@@ -36,7 +36,8 @@ form.onsubmit = (event) => { // .The onsubmit event is an event that occurs when
 clearbtn.onclick = () => {
     while (wrapper.hasChildNodes())
     wrapper.removeChild(wrapper.firstChild)
-    }
+	}
+
 
 // The removeChild() method removes a specified child node of the specified element.
 // Returns the removed node as a Node object, or null if the node does not exist.
