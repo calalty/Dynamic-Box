@@ -56,12 +56,12 @@ h1 {
 #clearButton {
 	margin-bottom: 1em;
 	margin-top: 1em;
-	border-radius: 50%;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1em;
 	background-color: #C0C0C0;
 	color: white;
 	border-color: #C0C0C0;
+	margin-left: -4em;
 }
 
 #input, #number {
@@ -69,6 +69,14 @@ h1 {
 	font-size: 1em;
 	background-color: #C0C0C0;
 	color: white;
-	border-color: #C0C0C0;
 
+}
+
+#button {
+font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	background-color: #C0C0C0;
+	color: white;
+	border-color: #C0C0C0;
+	
 }

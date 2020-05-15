@@ -24,8 +24,8 @@ form.onsubmit = (event) => { // .The onsubmit event is an event that occurs when
 		let generatedImage = document.createElement('img')
 		let numGen = Math.ceil((Math.random() * 100) + 1) // randomises the image
 		generatedImage.src = `https://source.unsplash.com/random/500x500/?sig=${numGen}&${imageSearch}`
-		generatedImage.setAttribute("height", "425vw / 3.5")
-		generatedImage.setAttribute("width", "425vw / 3.5")
+		generatedImage.setAttribute("height", "412vw / 3.5")
+		generatedImage.setAttribute("width", "412vw / 3.5")
 		wrapper.appendChild(box)
 		box.appendChild(generatedImage)
 	}
