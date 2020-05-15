@@ -36,6 +36,7 @@ input {
 	align-content: flex-start;
 	overflow: scroll;
 	overflow-x: hidden;
+	background-color: #C0C0C0;
 }
 
 .box {
@@ -47,34 +48,19 @@ input {
 
 @keyframes colorRotate {
 	from {
-	  color: rgb(77, 235, 111);
-	}
-	25% {
-	  color: #05d6e9;
-	}
-	50% {
-	  color: rgb(250, 7, 209);
-	}
-	75% {
-		color: rgb(244, 255, 83);
-	}
-	100% {
-		color: rgb(77, 235, 111)
-	}
-	from {
-		background-color: rgb(77, 235, 111);
+		background-color: #C0C0C0;
 	  }
 	  25% {
-		background-color: #05d6e9;
+		background-color: white;
 	  }
 	  50% {
-		background-color: rgb(250, 7, 209);
+		background-color: #C0C0C0;
 	  }
 	  75% {
-		background-color: rgb(244, 255, 83);
+		background-color: white;
 	  }
 	  100% {
-		background-color: rgb(77, 235, 111)
+		background-color: #C0C0C0
 	  }
   }
 
@@ -83,6 +69,7 @@ h1 {
 	font-weight: lighter;
 	letter-spacing: 0.1em;
 	word-spacing: 0.25em;
+	color: #C0C0C0;
 }
 
 #clearButton {
